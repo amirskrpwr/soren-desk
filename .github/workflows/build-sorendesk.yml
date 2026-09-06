@@ -27,6 +27,7 @@ jobs:
           targets: x86_64-pc-windows-msvc
 
       - name: Install Flutter Dependencies
+        working-directory: ./flutter
         run: flutter pub get
 
       - name: Build Windows Executable
