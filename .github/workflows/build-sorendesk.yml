@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: 'recursive' 
 
@@ -34,7 +34,7 @@ jobs:
           python build.py --flutter
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: SorenDesk-Windows
           path: target/release/rustdesk.exe
